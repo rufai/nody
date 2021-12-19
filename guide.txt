@@ -1,0 +1,17 @@
+1) views folder (html + css)
+-This folder contains frontend of the application
+-Anything that the user will see belongs to this place
+
+2) routes 
+- trafic control
+- this folder contain infomation to navigate the application
+
+3) public ( css, images, media )
+- static files
+- that will not change frequently
+
+4) bin ( configuration )
+
+5) app.js
+- is the brain of the application
+

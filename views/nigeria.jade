@@ -1,0 +1,10 @@
+extends layout
+
+block content
+
+  p Welcome to Nigeria
+  p We have states with LGAs in the country
+
+  ol 
+  each val in data
+   li= val.state.name

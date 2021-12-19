@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 List of Hotels
+  p= reviews.length
+
+  ol 
+  each val in reviews
+   li= val.AuthorLocation
