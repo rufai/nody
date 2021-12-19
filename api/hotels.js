@@ -1,40 +1,43 @@
 const hotel_data = 
 {
-    "Reviews": [
-    {
-    "Ratings": {
-    "Service": "5",
-    "Cleanliness": "5",
-    "Overall": "5.0",
-    "Value": "5",
-    "Sleep Quality": "5",
-    "Rooms": "5",
-    "Location": "5"
-    },
-    "AuthorLocation": "Jacksonville, Florida",
-    "Title": "“Great place and location”",
-    "Author": "Nadine R",
-    "ReviewID": "UR128178025",
-    "Content": "Usually stay near the airport, but this trip we had business on the north side of Balto. The traffic is too crazy staying elsewhere. This hotel was perfect, the hot breakfast wonderful - recommend getting the breakfast package if there are 2 of you in the room. Only hotel in the area with a restaurant and bar. This area does not have a whole lot of good restaurants (compared to staying near Columbia or Pikesville or off 83). It is next to White Marsh Mall which is a huge complex of shopping including an Ikea. The beds were fabulous - you can adjust your side for firmness.",
-    "Date": "April 19, 2012"
-    },
-    {
-    "Ratings": {
-    "Service": "4",
-    "Cleanliness": "4",
-    "Overall": "4.0",
-    "Value": "4",
-    "Sleep Quality": "4",
-    "Rooms": "4",
-    "Location": "5"
-    },
-    "AuthorLocation": "Chillicothe, Ohio",
-    "Title": "“Nice stay, nice surroundings”",
-    "Author": "blt3116",
-    "ReviewID": "UR123847354",
-    "Content": "Stayed at this Hilton for 2 nights. It was like most Hilton Garden Inns. It was nice, people were pleasant (very), cheap good breakfast ($10), small but nice workout facilities and pool, good rooms/bathrooms. Most of all, we appreciated the free shuttle to a mall, plenty of restaurants, Ikea, etc.",
-    "Date": "January 30, 2012"
-    },
+    "Reviews": 
+    [
+        {
+            "Ratings": 
+                {
+                "Service": "5",
+                "Cleanliness": "5",
+                "Overall": "5.0",
+                "Value": "5",
+                "Sleep Quality": "5",
+                "Rooms": "5",
+                "Location": "5"
+                },
+            "AuthorLocation": "Jacksonville, Florida",
+            "Title": "“Great place and location”",
+            "Author": "Nadine R",
+            "ReviewID": "UR128178025",
+            "Content": "Usually stay near the airport, but this trip we had business on the north side of Balto. The traffic is too crazy staying elsewhere. This hotel was perfect, the hot breakfast wonderful - recommend getting the breakfast package if there are 2 of you in the room. Only hotel in the area with a restaurant and bar. This area does not have a whole lot of good restaurants (compared to staying near Columbia or Pikesville or off 83). It is next to White Marsh Mall which is a huge complex of shopping including an Ikea. The beds were fabulous - you can adjust your side for firmness.",
+            "Date": "April 19, 2012"
+        },
+        {
+            "Ratings": 
+                {
+                "Service": "4",
+                "Cleanliness": "4",
+                "Overall": "4.0",
+                "Value": "4",
+                "Sleep Quality": "4",
+                "Rooms": "4",
+                "Location": "5"
+                },
+            "AuthorLocation": "Chillicothe, Ohio",
+            "Title": "“Nice stay, nice surroundings”",
+            "Author": "blt3116",
+            "ReviewID": "UR123847354",
+            "Content": "Stayed at this Hilton for 2 nights. It was like most Hilton Garden Inns. It was nice, people were pleasant (very), cheap good breakfast ($10), small but nice workout facilities and pool, good rooms/bathrooms. Most of all, we appreciated the free shuttle to a mall, plenty of restaurants, Ikea, etc.",
+            "Date": "January 30, 2012"
+        },
     {
     "Ratings": {
     "Service": "5",
