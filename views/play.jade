@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  p This should show data in the blog table
+
+  ol 
+  each val in play_data
+   li= val.name
+

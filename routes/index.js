@@ -13,6 +13,14 @@ const options = {
   order_by : "latest"
 }
 
+const mysql = require("mysql2")
+// create the connection to database
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  database: 'newspaper'
+});
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Victoria, William, and Leke' });
@@ -46,7 +54,7 @@ router.get("/nigeria/:state/:lga", function(req, res, next){
   res.render("nigeria_lga", {state_name :  state_name, lga_name : lga_name});
 })
 
-router.get("/hotels", function(req, res, next){
+router.post("/hotels", function(req, res, next){
  const review_data = hotels_data.module.hotel_data.Reviews 
 
  const get_images = https.request(options, amebo => {
@@ -66,6 +74,23 @@ router.get("/hotels", function(req, res, next){
 
   // res.send(hotels_data.module.hotel_data.Reviews)
   res.render("hotels", { reviews : review_data })
+})
+
+router.get("/play", function(req, res, next) {
+
+  connection.query(
+    'SELECT * FROM `blog`',  function(err, results, fields) {
+
+      if (err){
+        
+      }
+      console.log(results); // results contains rows returned by server
+      // res.send(results)
+      res.render('play', { play_data : results });
+       
+      // console.log(fields); // fields contains extra meta data about results, if available
+    })
+
 })
 
 module.exports = router;
