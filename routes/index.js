@@ -13,7 +13,8 @@ const options = {
   order_by : "latest"
 }
 
-const mysql = require("mysql2")
+const mysql = require("mysql2");
+const { route } = require('express/lib/application');
 // create the connection to database
 const connection = mysql.createConnection({
   host: 'localhost',
@@ -85,12 +86,16 @@ router.get("/play", function(req, res, next) {
         
       }
       console.log(results); // results contains rows returned by server
-      // res.send(results)
-      res.render('play', { play_data : results });
+        res.send(results)
+      // res.render('play', { play_data : results });
        
       // console.log(fields); // fields contains extra meta data about results, if available
     })
 
+})
+
+router.get("/books", function(req, res, next) {
+  res
 })
 
 module.exports = router;
